@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Notes</title>
+  </head>
+  <body>
+    <header>
+    <h1>Meeting Minutes</h1>
+    <h3>Preparation for driving test</h3>
+      <nav>
+        <ol>
+          <li><a href = #attendance_list>Attendance List</a></li>
+          <li><a href = #agenda>Agenda</a></li>
+          <li><a href = #uncompleted_task>Uncompleted Task</a></li>
+          <li><a href = #new_business>New Business</a></li>
+          <li><a href = #misc>Comments, Questions, and Concerns</a></li>
+        </ol>
+      </nav>
+  </header>
+  <hr>
+    <h2 id = "attendance_list">Attendance List</h2>
+    <details>
+      <summary>Present</summary>
+      <ul>
+        <li>Jacky</li>
+        <li>Steven</li>
+        <li>Bobby</li>
+        <li>Min</li>
+        <li>Joanna</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Absent</summary>
+      <ul>
+        <li>Lily</li>
+        <li>Henson</li>
+        <li>Harrison</li>
+        <li>Kelly</li>
+      </ul>
+    </details>
+    <h2 id = "agenda">Agenda</h2>
+    <p><strong>Driving test is in a few days!!!</strong></p>
+    <ol>
+      <li>Get familiar with the two test routes</li>
+      <li>Understand the instructions during the test</li>
+      <li>Memorize the predrive inspection</li>
+    </ol>
+    <h2 id = "uncompleted_task">Uncompleted Task</h2>
+    <ol>
+      <li>Driving at different speed during different sections,<strong> Don't go too fast or too slow!</strong></li>
+      <li>Get used to turing your head before changing lane or making turns</li>
+    </ol>
+    <h2 id = "new_business">New Business</h2>
+    <ul>
+      <li>Schedule your test dates with the coach</li>
+      <li>Get used to turing your head before changing lane or making turns</li>
+      <li>Accquire a vehicle for the test, either bring your own or borrow a vehicle from coach</li>
+    </ul>
+    <h2 id = "misc">Comments, Questions, and Concerns</h2>
+    <ol>
+      <li>"I'm so scared, I feel like I might fail the driving test"</li>
+      <li>"It's my second time taking the driving test, I hope I won't fail this time"</li>
+      <li>"Any suggestions that you guys can provide for the test?"</li>
+    </ol>
+    <form>
+    <fieldset>
+      <legend><strong>Quick Survey</strong></legend>
+      <label for = "name">Name:</label>
+      <input type = "text" id = "name" name = "name">
+      <br>
+      <label for = "email">Email:</label>
+      <input type = "text" id = "email" name = "email">
+      <br>
+      <label for = "phone">Phone Number:</label>
+      <input type = "text" id = "phone" name = "phone">
+      <br>
+      <label for = "schedule">Have you scheduled your test date?</label>
+      <input list = "scheduled" id = "schedule" name = "schedule" >
+      <datalist id = "scheduled">
+        <option value = "Yes">
+          </option>
+        <option value = "No">
+          </option>
+      </datalist>
+      <br>
+      <label for = "time">If yes, what date did you schedule for the test:</label>
+      <input type = "date" id = "time" name = "time">
+      <br>
+      <label for = "feel">How do you feel about the test</label>
+      <input list = "feels" id = "feel" name = "feel" >
+      <datalist id = "feels">
+        <option value = "Confident">
+          </option>
+          <option value = "Emmm, somewhere in the middle">
+          </option>
+        <option value = "Not confident">
+          </option>
+      </datalist>
+      <br>
+      <button>Submit</button>
+    </fieldset>
+  </form>
+  </body>
+</html>
