@@ -1,0 +1,9 @@
+h2{
+    color:var(--root-color, #000000)
+}
+header{
+    background-color: white;
+}
+:root{
+    --root-color:rgb(16, 242, 104);
+}
