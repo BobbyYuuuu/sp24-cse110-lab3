@@ -1,4 +1,4 @@
-# Standup Notes
+# Standup Notes (Team/Group Name)
 
 ## Location
 -[Fill in location]
