@@ -4,10 +4,10 @@
     font-style: normal;
   }
   body{
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Cedarville Cursive", cursive; /*change font of the Meeting notes to cursive */
   }
 h2.at{
-    color:var(--root-color, #000000)
+    color:var(--root-color, #000000) /*fallback for the h2 colors*/
 }
 header{
     background-color: white;
@@ -15,7 +15,7 @@ header{
 }
 
 :root{
-    --root-color:rgb(16, 242, 104);
+    --root-color:rgb(16, 242, 104); /*define variable */
 }
 #attendance_list li{
     display: grid;
@@ -53,7 +53,7 @@ button[type="but"]:hover{
     background-color: lime;
 }
 input:active{
-    background-color: color-mix(in srgb, yellow 75%, lime 100%);
+    background-color: color-mix(srgb, yellow 75%, lime 25%);
 }
 textarea:active{
     background-color: lime;
@@ -97,14 +97,14 @@ div.d4-nav li{
 form fieldset label{
     display: flex;
     flex-direction: column;
-    background-color: color(display-p3 0.3 0.1 0.9);
-    color: color(display-p3 0 1 0);
+    background-color: color(display-p3 0.3 0.1 0.9 / 1);
+    color: color(display-p3 0 1 0 / 1);
     width: fit-content;
     align-items: start;
     justify-content: start;
 }
 details:has(> summary){
-    text-shadow: #000000;
+    text-shadow: 1px 1px 2px #000000; 
     margin: auto;
     text-align: center;
 }
