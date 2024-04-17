@@ -37,7 +37,7 @@ header{
     text-decoration: underline;
     text-align: center;
     margin: auto;
-    color: darkgreen ;
+    color: color-mix(srgb, yellow 10%, lime 25%) ;
   }
   nav > ol{
     right: 0;
@@ -53,7 +53,7 @@ button[type="but"]:hover{
     background-color: lime;
 }
 input:active{
-    background-color: color-mix(srgb, yellow 75%, lime 25%);
+    background-color: lime;
 }
 textarea:active{
     background-color: lime;
