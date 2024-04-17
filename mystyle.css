@@ -1,3 +1,11 @@
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    font-family: "Cedarville Cursive", cursive;
+  }
 h2.at{
     color:var(--root-color, #000000)
 }
@@ -5,6 +13,7 @@ header{
     background-color: white;
     position: static;
 }
+
 :root{
     --root-color:rgb(16, 242, 104);
 }
@@ -21,6 +30,8 @@ header{
     border-radius: 10mm;
     border-width: 2px;
     text-align: center;
+    grid-template-columns: auto;
+    align-items: center;
   }
   h3, h2{
     text-decoration: underline;
@@ -31,6 +42,9 @@ header{
   nav > ol{
     right: 0;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
  
   }
 
@@ -39,7 +53,7 @@ button[type="but"]:hover{
     background-color: lime;
 }
 input:active{
-    background-color: lime;
+    background-color: color-mix(in srgb, yellow 75%, lime 100%);
 }
 textarea:active{
     background-color: lime;
@@ -47,8 +61,8 @@ textarea:active{
 #d2-nav{
     color: #000000;
     text-decoration: underline;
-    text-decoration-color: paleturquoise;
-    text-decoration-thickness: 2mm;
+    text-decoration-color: red;
+    text-decoration-thickness: 0.5rem;
 
 }
 .d1-nav li, .d3-nav li{
@@ -86,6 +100,8 @@ form fieldset label{
     background-color: color(display-p3 0.3 0.1 0.9);
     color: color(display-p3 0 1 0);
     width: fit-content;
+    align-items: start;
+    justify-content: start;
 }
 details:has(> summary){
     text-shadow: #000000;
@@ -113,4 +129,9 @@ img{
     justify-content: center;
     align-items: center;  
     margin: auto;
+}
+@media (max-width: 1000px){
+    body{
+        font-size: 10px;
+    }
 }
