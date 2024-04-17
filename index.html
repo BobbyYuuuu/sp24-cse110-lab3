@@ -11,6 +11,9 @@
         background-color: pink;
       }
     </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -30,8 +33,8 @@
       </nav>
   </header>
   <hr>
-  <section>
-    <h2 id = "attendance_list">Attendance List</h2>
+  <section id = "attendance_list">
+    <h2 class="at">Attendance List</h2>
     <details>
       <summary>Present</summary>
       <ul>
@@ -54,7 +57,8 @@
   </section>
     <hr>
     <h2 id = "agenda">Agenda</h2>
-    <div><strong><span style="color:navy">Driving test is in a few days!!!</span></strong></div>
+    <div class="d1-nav">
+    <div id="d2-nav"><strong><span style="color:black">Driving test is in a few days!!!</span></strong></div>
     <ol>
       <li>Get familiar with the two test routes</li>
       <li>Understand the instructions during the test</li>
@@ -66,20 +70,25 @@
       <li>Driving at different speed during different sections,<b><em> Don't go too fast or too slow!</em></b></li>
       <li>Get used to turing your head before changing lane or making turns</li>
     </ol>
+  </div>
     <hr>
+    <div class="d3-nav">
     <h2 id = "new_business">New Business</h2>
     <ul>
       <li>Schedule your test dates with the coach</li>
       <li>Get used to turing your head before changing lane or making turns</li>
       <li>Accquire a vehicle for the test, either bring your own or borrow a vehicle from coach</li>
     </ul>
+  </div>
     <hr>
+    <div class="d4-nav">
     <h2 id = "misc">Comments, Questions, and Concerns</h2>
     <ol>
       <li>"I'm so scared, I feel like I might fail the driving test"</li>
       <li>"It's my second time taking the driving test, I hope I won't fail this time"</li>
       <li>"Any suggestions that you guys can provide for the test?"</li>
     </ol>
+  </div>
     <hr>
     <h2 id = "diagram">Diagram</h2>
     <img src="Diagram.png" alt="Driving hint">
@@ -94,7 +103,7 @@
       <source src="safe_driving.mp4" type = "video/mp4">
     </video>
     <hr>
-    <label><strong>Quick Survey</strong></label>
+    <label id="survey"><strong>Quick Survey</strong></label>
     <form>
     <fieldset>
       <label for = "name">Name:</label>
@@ -133,7 +142,7 @@
       <textarea id="tips" name="tips">
       </textarea>
       <br>
-      <button>Submit</button>
+      <button type="but">Submit</button>
     </fieldset>
   </form>
   <footer>
