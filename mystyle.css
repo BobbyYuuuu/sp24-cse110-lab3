@@ -1,9 +1,116 @@
-h2{
+h2.at{
     color:var(--root-color, #000000)
 }
 header{
     background-color: white;
+    position: static;
 }
 :root{
     --root-color:rgb(16, 242, 104);
+}
+#attendance_list li{
+    display: grid;
+    padding: 1em;
+    width: 5vw;
+    margin-top: 3mm;
+    margin-left: 50px;
+    margin-bottom: 3mm;
+    margin-right: 0.3cm;
+    border-style: dotted;
+    border-color: hsl(273, 100%, 76%);
+    border-radius: 10mm;
+    border-width: 2px;
+    text-align: center;
+  }
+  h3, h2{
+    text-decoration: underline;
+    text-align: center;
+    margin: auto;
+    color: darkgreen ;
+  }
+  nav > ol{
+    right: 0;
+    position: fixed;
+ 
+  }
+
+button[type="but"]:hover{
+    color: blue;
+    background-color: lime;
+}
+input:active{
+    background-color: lime;
+}
+textarea:active{
+    background-color: lime;
+}
+#d2-nav{
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: paleturquoise;
+    text-decoration-thickness: 2mm;
+
+}
+.d1-nav li, .d3-nav li{
+    padding: 1em;
+    width: 25vw;
+    margin: 3mm 0.3cm 3mm 5px;
+    border-style: dotted;
+    border-color: hsl(0, 100%, 50%);
+    border-radius: 10mm;
+    border-width: 2px;
+    text-align: center;
+}
+*{
+    color: black;
+}
+form ~ footer{
+    text-decoration: underline;
+}
+form + footer{
+    text-decoration-color: lightskyblue;
+}
+div.d4-nav li{
+    padding: 1em;
+    width: 25vw;
+    margin: 3mm 0.3cm 3mm 5px;
+    border-style: dashed;
+    border-color: hsl(249, 100%, 50%);
+    border-radius: 10mm;
+    border-width: 2px;
+    text-align: center;
+}
+form fieldset label{
+    display: flex;
+    flex-direction: column;
+    background-color: color(display-p3 0.3 0.1 0.9);
+    color: color(display-p3 0 1 0);
+    width: fit-content;
+}
+details:has(> summary){
+    text-shadow: #000000;
+    margin: auto;
+    text-align: center;
+}
+video{
+    display: block;
+    padding-left: 5cm;
+    padding-top: .5cm;
+    padding-bottom: .5cm;
+    padding-right: 5cm;
+    min-width: 10cm;
+    width: 100%
+}
+audio{
+    display: inline-block;
+    padding: .5cm .05cm .5cm 5cm;
+    max-width: 7cm;
+    min-width: 5cm;
+    width: 100%;
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: auto;
 }
